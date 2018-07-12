@@ -1,0 +1,11 @@
+---- UpdateSuccessAddrFlag Matches (10 in 3 files) ----
+Main.c (f:\git_dir\wangdu\iap\user):		if(UpdateSuccessAddrFlag == 1)
+Work.c (f:\git_dir\wangdu\iap\user):	u8 UpdateSuccessAddrFlag = 0;		//升级成功标志
+Work.c (f:\git_dir\wangdu\iap\user):	u16 UpdateSuccessAddrFlag = 0;		//升级成功标志
+Work.c (f:\git_dir\wangdu\iap\user):				UpdateSuccessAddrFlag = 1;
+Work.c (f:\git_dir\wangdu\iap\user):				W25QXX_Write(ADDR_UPDATA_SUCCESS_FLAG, &UpdateSuccessAddrFlag, 1);
+Work.c (f:\git_dir\wangdu\iap\user)://				W25QXX_Read1(ADDR_UPDATA_SUCCESS_FLAG, &UpdateSuccessAddrFlag, 1);
+Work.c (f:\git_dir\wangdu\iap\user):				STMFLASH_Write(ADDR_UPDATA_SUCCESS_FLAG, &UpdateSuccessAddrFlag, 1);
+Work.c (f:\git_dir\wangdu\iap\user)://				STMFLASH_Read(ADDR_UPDATA_SUCCESS_FLAG, &UpdateSuccessAddrFlag, 1);
+Work.h (f:\git_dir\wangdu\iap\user):	extern u8 UpdateSuccessAddrFlag;		//升级成功标志
+Work.h (f:\git_dir\wangdu\iap\user):	extern u16 UpdateSuccessAddrFlag;		//升级成功标志
